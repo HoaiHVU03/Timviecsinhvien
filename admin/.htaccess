@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /WebLanAnh/admin/
+
+# Nếu file hoặc thư mục không tồn tại, chuyển hướng về index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L] 
